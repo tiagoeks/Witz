@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(150, 120)">
+    <!-- Peça 1: U Principal -->
+    <path d="M 100 150 L 100 300 L 140 340 L 380 270 L 380 120 L 340 80 L 140 140 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <text x="240" y="220" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">1x Forma Principal U</text>
+    
+    <!-- Peça 2: Tampa Lateral 1 -->
+    <g transform="translate(-50, 100)">
+      <rect x="0" y="100" width="100" height="120" rx="6" fill="rgba(59, 130, 246, 0.2)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="50" y="165" fill="#60a5fa" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Tampa 1</text>
+    </g>
+    
+    <!-- Peça 3: Tampa Lateral 2 -->
+    <g transform="translate(420, 50)">
+      <rect x="0" y="100" width="100" height="120" rx="6" fill="rgba(139, 92, 246, 0.2)" stroke="#a78bfa" stroke-width="2"/>
+      <text x="50" y="165" fill="#a78bfa" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Tampa 2</text>
+    </g>
+  </g>
+
+  <text x="400" y="520" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Estrutura Desmontável (3 Peças Separadas)</text>
+  <text x="400" y="550" fill="#94a3b8" font-family="sans-serif" font-size="14" text-anchor="middle">Facilita a Higienização e Armazenamento Otimizado</text>
+</svg>

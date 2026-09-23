@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="acrylic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.4)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.1)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(200, 180)">
+    <!-- Montado: U + 2 Tampas laterais encaixadas -->
+    <path d="M 50 150 L 50 350 L 100 420 L 400 320 L 400 120 L 350 50 L 100 220 Z" fill="url(#acrylic)" stroke="rgba(255,255,255,0.7)" stroke-width="2.5"/>
+    <!-- Tampa Lateral Esquerda -->
+    <path d="M 50 150 L 100 220 L 100 420 L 50 350 Z" fill="rgba(59, 130, 246, 0.25)" stroke="#60a5fa" stroke-width="3"/>
+    <!-- Tampa Lateral Direita -->
+    <path d="M 350 50 L 400 120 L 400 320 L 350 250 Z" fill="rgba(139, 92, 246, 0.25)" stroke="#a78bfa" stroke-width="3"/>
+  </g>
+
+  <text x="400" y="520" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Forma Montada (3 Peças Encaixadas)</text>
+  <text x="400" y="550" fill="#94a3b8" font-family="sans-serif" font-size="14" text-anchor="middle">1 Forma U + 2 Tampas Laterais de Encaixe Direto</text>
+</svg>

@@ -1,86 +1,180 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <main style={{ minHeight: '100vh', padding: '4rem 2rem', maxWidth: '1200px', margin: '0 auto' }}>
-      {/* Header */}
-      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'var(--gradient-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '1.2rem', color: '#fff' }}>
-            W
-          </div>
-          <span style={{ fontSize: '1.5rem', fontWeight: '700', letterSpacing: '-0.5px' }}>Witz</span>
-        </div>
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-          <span className="badge badge-success">● Ready for Railway</span>
-          <a
-            href="https://github.com/tiagoeks/Witz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-secondary"
-          >
-            GitHub Repo
-          </a>
+    <div className="min-h-screen flex flex-col bg-[#faf9f6] text-[#1c1917] font-sans antialiased">
+      {/* Header Witz Institucional */}
+      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-stone-200/80 shadow-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3">
+            <img
+              src="/img/Logo Witz.jpg"
+              alt="Witz Logo Oficial"
+              className="h-10 sm:h-12 w-auto object-contain rounded-lg border border-stone-200 shadow-xs"
+            />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold tracking-tight text-stone-900">
+                Witz
+              </span>
+              <span className="text-[10px] text-stone-500 tracking-wider uppercase font-medium">
+                Soluções em Acrílico & Corte a Laser
+              </span>
+            </div>
+          </Link>
+
+          <nav className="flex items-center gap-6">
+            <Link
+              href="/slice-cake"
+              className="text-sm font-semibold px-4 py-2 rounded-xl bg-purple-700 hover:bg-purple-800 text-white transition-all shadow-xs"
+            >
+              Catálogo Slice Cake
+            </Link>
+          </nav>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section style={{ textAlign: 'center', margin: '4rem 0 6rem 0' }}>
-        <div style={{ marginBottom: '1.5rem' }}>
-          <span className="badge">🚀 Project Initialized</span>
-        </div>
-        <h1 style={{ fontSize: '3.5rem', fontWeight: '800', lineHeight: '1.15', marginBottom: '1.5rem' }}>
-          Bem-vindo ao projeto <span className="gradient-text">Witz</span>
-        </h1>
-        <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '680px', margin: '0 auto 2.5rem auto', lineHeight: '1.6' }}>
-          Sua aplicação Next.js / React está configurada e integrada com o GitHub.
-          Pronta para deploy automático e contínuo no Railway!
-        </p>
+      {/* Main Content */}
+      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-20 space-y-16">
+        
+        {/* Hero Section Institucional da Witz */}
+        <section className="text-center space-y-6 max-w-4xl mx-auto">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-purple-50 text-purple-700 border border-purple-200">
+            Empresa Especializada em Engenharia & Design em Acrílico
+          </span>
 
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-          <a href="#features" className="btn-primary">
-            Explorar Recursos
-          </a>
-          <a
-            href="https://railway.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-secondary"
-          >
-            Acessar Railway
-          </a>
-        </div>
-      </section>
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-stone-900 tracking-tight leading-tight">
+            Soluções em Acrílico, Corte a Laser e Comunicação Visual de Alta Precisão
+          </h1>
 
-      {/* Grid Status & Features */}
-      <section id="features" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginTop: '4rem' }}>
-        <div className="glass-panel" style={{ padding: '2rem' }}>
-          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🐙</div>
-          <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', fontWeight: '700' }}>GitHub Sync</h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>
-            Repositório conectado a <code>github.com/tiagoeks/Witz</code>. Toda alteração na branch main acionará builds no Railway.
+          <p className="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl mx-auto">
+            A <strong>Witz</strong> projeta e fabrica peças personalizadas em acrílico cristal premium, equipamentos para confeitaria e elementos de comunicação visual produzidos com tecnologia de corte a laser.
           </p>
-        </div>
+        </section>
 
-        <div className="glass-panel" style={{ padding: '2rem' }}>
-          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🚂</div>
-          <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', fontWeight: '700' }}>Railway Integration</h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>
-            Configuração simples e suporte nativo a Next.js / Node.js. O Railway gerenciará HTTPS, variáveis de ambiente e escalabilidade.
-          </p>
-        </div>
+        {/* 4 Pilares de Atuação da Witz */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-xs space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 font-bold text-lg">
+              ✨
+            </div>
+            <h2 className="font-bold text-stone-900 text-base">
+              Soluções em Acrílico
+            </h2>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Desenvolvimento de formas, expositores e estruturas transparentes com padrão técnico elevado.
+            </p>
+          </div>
 
-        <div className="glass-panel" style={{ padding: '2rem' }}>
-          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚡</div>
-          <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', fontWeight: '700' }}>Next.js App Router</h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>
-            Arquitetura moderna com TypeScript, Server Components, rotas de API otimizadas e renderização ultra rápida.
-          </p>
-        </div>
-      </section>
+          <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-xs space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 font-bold text-lg">
+              ⚡
+            </div>
+            <h2 className="font-bold text-stone-900 text-base">
+              Corte a Laser
+            </h2>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Usinagem a laser de alta precisão garantindo encaixes perfeitos sem folgas e bordas polidas.
+            </p>
+          </div>
 
-      {/* Footer */}
-      <footer style={{ marginTop: '8rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-        © {new Date().getFullYear()} Witz. Desenvolvido por Tiago Ekstein.
+          <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-xs space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 font-bold text-lg">
+              📐
+            </div>
+            <h2 className="font-bold text-stone-900 text-base">
+              Comunicação Visual
+            </h2>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Criação de elementos gráficos corporativos, sinalizações técnicas e displays promocionais.
+            </p>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-xs space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 font-bold text-lg">
+              🛠️
+            </div>
+            <h2 className="font-bold text-stone-900 text-base">
+              Peças Personalizadas
+            </h2>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Projetos sob medida atendendo especificações dimensionais rigorosas de cada cliente.
+            </p>
+          </div>
+        </section>
+
+        {/* Card em Destaque no Catálogo: Slice Cake 30x10cm (EAN 7792539480714) */}
+        <section className="bg-white rounded-3xl border border-stone-200 p-6 sm:p-10 shadow-xs space-y-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-stone-100 pb-6">
+            <div>
+              <span className="text-xs font-mono font-semibold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded border border-purple-200">
+                PRODUTO OFICIAL DO CATÁLOGO
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight mt-1">
+                Forma Acrílica Slice Cake 30x10cm
+              </h2>
+            </div>
+            <div className="text-right text-xs font-mono text-stone-500 space-y-0.5">
+              <div>Ref: <strong className="text-stone-900">1007</strong></div>
+              <div>EAN: <strong className="text-purple-700">7792539480714</strong></div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div className="md:col-span-5 aspect-[4/3] rounded-2xl overflow-hidden bg-stone-50 border border-stone-200 p-3 flex items-center justify-center">
+              <img
+                src="/img/1007.jpg"
+                alt="Forma Acrílica Slice Cake 30x10cm Witz 1007"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="md:col-span-7 space-y-4">
+              <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
+                Produto desenvolvido para auxiliar na montagem, padronização e apresentação de Slice Cakes.
+              </p>
+
+              <div className="grid grid-cols-2 gap-3 text-xs">
+                <div className="p-3 rounded-lg bg-stone-50 border border-stone-200">
+                  <span className="text-stone-500 block mb-1">Material & Espessura</span>
+                  <strong className="text-stone-900 block">Acrílico Cristal 3 mm</strong>
+                </div>
+
+                <div className="p-3 rounded-lg bg-stone-50 border border-stone-200">
+                  <span className="text-stone-500 block mb-1">Medidas Internas</span>
+                  <strong className="text-purple-700 font-mono block">30 x 10 x 10 cm</strong>
+                </div>
+
+                <div className="p-3 rounded-lg bg-stone-50 border border-stone-200">
+                  <span className="text-stone-500 block mb-1">Medidas Externas</span>
+                  <strong className="text-stone-800 font-mono block">33 x 10,7 x 10,3 cm</strong>
+                </div>
+
+                <div className="p-3 rounded-lg bg-stone-50 border border-stone-200">
+                  <span className="text-stone-500 block mb-1">Conteúdo da Embalagem</span>
+                  <strong className="text-stone-900 block">3 Peças (1 U + 2 Tampas)</strong>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <Link
+                  href="/slice-cake"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-semibold text-sm transition-all shadow-xs"
+                >
+                  Consultar Ficha Técnica Oficial (Slice Cake) →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer Institucional Witz */}
+      <footer className="border-t border-stone-200 bg-white py-8 text-center text-xs text-stone-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-2">
+          <p className="font-semibold text-stone-900">Witz — Soluções em Acrílico, Corte a Laser & Comunicação Visual</p>
+          <p>© {new Date().getFullYear()} Witz • Domínio Oficial: www.witzbr.com.br</p>
+        </div>
       </footer>
-    </main>
+    </div>
   );
 }

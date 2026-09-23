@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="filmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(251, 191, 36, 0.4)"/>
+      <stop offset="100%" stop-color="rgba(245, 158, 11, 0.1)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(200, 150)">
+    <!-- Acrylic Layer -->
+    <rect x="50" y="50" width="300" height="240" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    
+    <!-- Protective Film Peeling Off -->
+    <path d="M 50 50 Q 200 80 350 50 L 350 290 Q 200 250 50 290 Z" fill="url(#filmGrad)" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4,4"/>
+    
+    <!-- Peel Arrow icon -->
+    <path d="M 330 60 C 370 20, 390 120, 310 120" stroke="#fbbf24" stroke-width="4" fill="none"/>
+    <polygon points="310,110 300,120 310,130" fill="#fbbf24"/>
+    
+    <text x="200" y="170" fill="#fbbf24" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Remover Película Protetora</text>
+    <text x="200" y="195" fill="#fef08a" font-family="sans-serif" font-size="13" text-anchor="middle">Antes do primeiro uso</text>
+  </g>
+
+  <text x="400" y="510" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Proteção da Superfície em Acrílico</text>
+  <text x="400" y="540" fill="#94a3b8" font-family="sans-serif" font-size="14" text-anchor="middle">Película preserva contra arranhões durante transporte e montagem</text>
+</svg>
